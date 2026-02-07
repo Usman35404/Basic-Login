@@ -1,2 +1,26 @@
-# Basic-Login
-This was idea as my start in career of SE. I try to make a login system in which name and password is fixed. 
+#include<iostream>
+#include<string>
+using namespace std;
+string username="Usman";
+string password="us2119";
+int main()
+{
+    cout<<"\t\t***Log In***\t\t";
+    cout<<"\n\nEnter your username: ";
+    string inputUsername;
+    getline(cin,inputUsername);
+    cout<<"Enter your password: ";
+    string inputPassword;
+    getline(cin,inputPassword);
+    if(inputUsername==username &&inputPassword==password)
+    {
+        cout<<"Welcome to the Gym Management System, Usman!\n Let's Start Program."<<endl;
+    }
+    else
+    {
+        cout<<"Invalid username or password. Please try again."<<endl;
+    }
+
+return 0;
+
+}
